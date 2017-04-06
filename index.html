@@ -67,10 +67,10 @@
 									<span class="meta__author">https://www.tblaunchpad.com/</span></a>
 								</div>
 	              <p>Together with the engineering team, we designed, built and shipped from scratch a bespoke script competition and coverage system.<br /> This script submission and management platform accepts over 6,000 scripts per year and "automagically" assigns them to a stable of readers and judges for scoring.</p>
-                <p><strong>The Problem: </strong>The Tracking Board's Launch Pad had grown into one of the largest screenplay competitions in the country, but was still managing this process through their WordPress platform, dispatching scripts to readers and collecting feedback via email, and tracking the progress and score(s) of the screenplays in an Excel spreadsheet. This created a burdon on the staff to manually dispach and tabulate all of the scores from these screenplays in time for the announcement dates. </p>
+                <p><strong>The Problem: </strong>The Tracking Board's Launch Pad had grown into one of the largest screenplay competitions in the country, but was still managing this flow through their WordPress platform, dispatching scripts to readers and collecting feedback via email, and tracking the progress and score(s) of the screenplays in an Excel spreadsheet. This created a burden on the staff to manually dispatch and tabulate all of the scores from these screenplays in time for the announcement dates. </p>
                 <p><strong>The Solution: </strong>We created a web app that collected script PDFs, processed payments, and assigns the scripts to readers. The application also provided a beautiful web interface for readers to input their scores and feedback saving hours that used to be spent formatting Word docs and creating PDFs. Finally, the system would tabulate the scores for each scorecard and keep high-scoring scripts moving up the judge-chain until winners were chosen. </p>
-                <p><strong>Challenges: </strong> Since the Launch Pad's competitions were well established before we built this app, we had to migrate the user base to the new app including authentication and user purchase history. Because we operate competitions of different mediums (features, pilots, manuscripts), it was a challange to keep it DRY and simple while still meeting the complete needs of each competition. </p>
-                <p><strong>Technology Used: </strong> Ruby on Rails, Bootstrap, Stripe, Cloudinary </p>
+                <p><strong>Challenges: </strong> Since the Launch Pad's competitions were well established before we built this app, we had to migrate the user base to the new app including authentication and user purchase history. Because we operate competitions of different mediums (features, pilots, manuscripts), it was a challenge to keep it DRY and simple while still meeting the complete needs of each competition. </p>
+                <p><strong>Technology Used: </strong> Ruby on Rails, Bootstrap, Stripe, Cloudinary, State Machine </p>
                 <img class="" src="img/projects/tbl1.png" width="100%" style="border: 1px solid #eee;"/>
                 <hr />
                 <img class="" src="img/projects/tbl2.png" width="100%" style="border: 1px solid #eee;"/>
@@ -103,8 +103,8 @@
 									<span class="meta__author">http://filmbudget.co/</span></a>
 								</div>
 								<p>Managed a team of overseas engineers to plan, design and engineer this product while building upon the then-new Meteor framework.<br /> Since the framework was new, the team would need to come up with creative solutions for problems that arose from this uncharted world.<br /> Also contributed fronted knowledge to develop the UI of this product.</p>
-                <p><strong>The Problem: </strong>Film budgeting has always been a specific type of planning that doesn't fit into any one tool. The industry standard for film budgeting, Movie Magic Budgeting, is a desktop app only, has no collaboarative features, and hasn't recived a meaningful update in a decade. The rest of the industry was moving into more advanced tech, but budgeting was stuck.</p>
-                <p><strong>The Solution: </strong>Developing a dead-simple film budgeting web app that is powerful, beautiful, and easy to get started as a user was crucial for us. We chose the Meteor framework because it lends itself to creating a Google Sheets-style application with real-time calculations and it's ability to save to the brower DB and sync with the server. This provided a collaborative budgeting experience, in a great environment, that provided instant calculations.  </p>
+                <p><strong>The Problem: </strong>Film budgeting has always been a specific type of planning that doesn't fit into any one tool. The industry standard for film budgeting, Movie Magic Budgeting, is a desktop app only, has no collaborative features, and hasn't received a meaningful update in a decade. The rest of the industry was moving into more advanced tech, but budgeting was stuck.</p>
+                <p><strong>The Solution: </strong>Developing a dead-simple film budgeting web app that is powerful, beautiful, and easy to get started as a user was crucial for us. We chose the Meteor framework because it lends itself to creating a Google Sheets-style application with real-time calculations and it's ability to save to the browser DB and sync with the server. This provided a collaborative budgeting experience, in a great environment, that provided instant calculations.  </p>
                 <p><strong>Challenges: </strong> Creating a real-time feedback loop for calculations. Allowing for collaborative editing of the same budget by different users. Dealing with user-created variables and establishing a hook for when a variable is updated it should re-evaluate the formula. </p>
                 <p><strong>Technology Used: </strong> Meteor, Node.js, MongoDB</p>
 								<img class="" src="img/projects/gb1.png" width="100%" style="border: 1px solid #eee;"/>
@@ -138,7 +138,11 @@
 									<a class="meta__avatar" href="http://flicktracker.com"><svg class="nc-icon glyph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48"> <path fill="#444444" d="M41,1H7C5.895,1,5,1.895,5,3v42c0,1.105,0.895,2,2,2h34c1.105,0,2-0.895,2-2V3C43,1.895,42.105,1,41,1z M26.828,31.071L24,33.899c-2.729,2.729-7.17,2.729-9.899,0c-2.729-2.729-2.729-7.17,0-9.899l2.828-2.828 c2.729-2.729,7.17-2.729,9.899,0c0.76,0.76,1.3,1.654,1.637,2.606L28.243,24c-0.443,0.443-0.991,0.706-1.563,0.811 c-0.22-0.814-0.628-1.588-1.266-2.226c-1.949-1.949-5.122-1.949-7.071,0l-2.828,2.828c-1.949,1.949-1.949,5.122,0,7.071 c1.949,1.949,5.122,1.949,7.071,0l1.793-1.793c0.888,0.174,1.794,0.206,2.691,0.111C26.99,30.893,26.914,30.985,26.828,31.071z M33.9,24l-2.828,2.828c-2.729,2.729-7.17,2.729-9.9,0c-0.76-0.76-1.3-1.655-1.637-2.606L19.757,24 c0.443-0.443,0.991-0.706,1.563-0.811c0.22,0.814,0.628,1.588,1.266,2.225c1.949,1.949,5.122,1.949,7.071,0l2.828-2.828 c1.949-1.949,1.949-5.122,0-7.071c-1.949-1.949-5.122-1.949-7.071,0l-1.793,1.793c-0.888-0.174-1.794-0.206-2.692-0.111 c0.081-0.089,0.156-0.182,0.242-0.268L24,14.1c2.729-2.729,7.17-2.729,9.9,0C36.629,16.83,36.628,21.271,33.9,24z"></path> </svg>
 									<span class="meta__author">http://flicktracker.com</span></a>
 								</div>
-								<p>Managed a team of engineers to build this product from scratch using an iterative agile development process with remote engineers.<br /> Developed the front end conveyed product needs and changes to support the backend problems and framework constraints. FlickTracker is a Ruby on Rails application with Postgres.
+								<p>Created a central hub of production information complete with cast and crew start paperwork, check request management, and accurate cost reporting to keep everyone on the same page at all times.</p>
+                <p><strong>The Problem: </strong>We set out to improve the on-set production experience by addressing three issues. 1) Managing cast and crew start paperwork and timecards is hard and often done on paper, in a disorganized fashion. 2) There is no central hub of information, everyone has their own work kept in their personal documents or in their head. 3) No effective way for the financier or distributor to keep tabs on the production's progress at all times. </p>
+                <p><strong>The Solution: </strong>By creating a web app that connects departments together, we effectively made a hub of information that collected the necessary information constantly synched across the team's computers. In addition, "check requests" can be created through the application and sent to the appropriate approver for signoff and processing. Finally, all checks or POs tabulate to a central "live budget" so that the distriutor stays informed with the expenses of the production.  </p>
+                <p><strong>Challenges: </strong> Keeping all crew member's files synched up on their individual computers while maintaining accurate permissions on a per-user basis. Creating PDF "check requests" and re-rendering them as they move through different states.   </p>
+                <p><strong>Technology Used: </strong> Ruby on Rails, Dropbox API, Self-hosted PDF manipulation binaries, heavy mailer use, state machine</p>
                 <img class="" src="img/projects/ft1.png" width="100%" style="border: 1px solid #eee;"/>
                 <hr />
                 <img class="" src="img/projects/ft2.png" width="100%" style="border: 1px solid #eee;"/>
@@ -166,11 +170,7 @@
 								<p class="card__subtitle">Feature Film Crowdfunding</p>
 							</div>
 							<div class="card__copy">
-								<p>FilmFunder sells profit participation of projects to individual investors, equity funds, and financial institutions who wish to invest in the entertainment industry. The money earned from the sale of profit participation is used to produce the film. FilmFunder fully researches the background of all projects prior to offering them for investment to ensure superior quality and investor protection. Once all of the points have been sold, the funds are released to the project and production can begin.
-
-                FilmFunder offers a unique investment opportunity built around pre-screened feature films. The online platform acts as a marketplace for investors to purchase profit participation in a film. Each profit participation “point” is sold at a price equal to 1/100th of the total cost to produce the film.
-
-                Crowdfunding film production has become increasingly popular in the recent months, but professionals are still warming to the concept. The new platform, FilmFunder provides an innovative place for film professionals to conduct transactions with investors to get projects funded. FilmFunder is an advanced tool for film finance professionals. Below you will find a current list of features as well as future features of the FilmFunder Platform. Check back often as this information is constantly being updated.</p>
+								<p>FilmFunder sold profit participation of projects to individual investors, equity funds, and financial institutions who wish to invest in the entertainment industry. The money earned from the sale of profit participation is used to produce the film. FilmFunder fully researched the background of all projects prior to offering them for investment to ensure superior quality. Once all of the points were sold, the funds were released to the project and production can begin. FilmFunder provided an innovative place for film professionals to conduct transactions with investors to get projects funded.</p>
                 <img class="" src="img/projects/ff1.png" width="100%" style="border: 1px solid #eee;"/>
                 <hr />
                 <img class="" src="img/projects/ff2.png" width="100%" style="border: 1px solid #eee;"/>
@@ -201,11 +201,11 @@
 									<a class="meta__avatar" href="http://www.imdb.com/name/nm3276030/"><svg class="nc-icon glyph" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px" viewBox="0 0 48 48"> <path fill="#444444" d="M41,1H7C5.895,1,5,1.895,5,3v42c0,1.105,0.895,2,2,2h34c1.105,0,2-0.895,2-2V3C43,1.895,42.105,1,41,1z M26.828,31.071L24,33.899c-2.729,2.729-7.17,2.729-9.899,0c-2.729-2.729-2.729-7.17,0-9.899l2.828-2.828 c2.729-2.729,7.17-2.729,9.899,0c0.76,0.76,1.3,1.654,1.637,2.606L28.243,24c-0.443,0.443-0.991,0.706-1.563,0.811 c-0.22-0.814-0.628-1.588-1.266-2.226c-1.949-1.949-5.122-1.949-7.071,0l-2.828,2.828c-1.949,1.949-1.949,5.122,0,7.071 c1.949,1.949,5.122,1.949,7.071,0l1.793-1.793c0.888,0.174,1.794,0.206,2.691,0.111C26.99,30.893,26.914,30.985,26.828,31.071z M33.9,24l-2.828,2.828c-2.729,2.729-7.17,2.729-9.9,0c-0.76-0.76-1.3-1.655-1.637-2.606L19.757,24 c0.443-0.443,0.991-0.706,1.563-0.811c0.22,0.814,0.628,1.588,1.266,2.225c1.949,1.949,5.122,1.949,7.071,0l2.828-2.828 c1.949-1.949,1.949-5.122,0-7.071c-1.949-1.949-5.122-1.949-7.071,0l-1.793,1.793c-0.888-0.174-1.794-0.206-2.692-0.111 c0.081-0.089,0.156-0.182,0.242-0.268L24,14.1c2.729-2.729,7.17-2.729,9.9,0C36.629,16.83,36.628,21.271,33.9,24z"></path> </svg></a>
 									<span class="meta__author">IMDb Credits</span>
 								</div>
-								<p>After line producing over a dozen feature films, He took his knowledge of team building and management and applied it to the tech industry. Movies that he has line produced have appeared in theaters, as well as on SyFy, Lifetime, IFC, and Netflix. He is an active member of the Producer's Guild of America.</p>
+								<p>After line producing over a dozen feature films, Jude took his knowledge of team building and management and applied it to the tech industry. Movies that he has line produced have appeared in theaters, as well as on SyFy, Lifetime, IFC, and Netflix. He is an active member of the Producer's Guild of America.</p>
               </div>
 						</div>
 					</div>
-                </div>
+        </div>
                 <div class="card">
                     <div class="card__container card__container--closed">
                         <svg class="card__image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1200" preserveAspectRatio="xMidYMid slice">
@@ -241,13 +241,11 @@
 
 								<p>As a proud New Orleans native, Jude loves music and great food. He especially enjoys exploring new restaurants. He is a member of the Producer’s Guild of America and lives in Los Angeles with his wife and son.</p>
 								</div>
-						</div>
-					</div>
-                </div>
-            </div>
-            <!-- /cards -->
+						  </div>
+					  </div>
+          </div>
         </div>
-        <!-- Related demos -->
+      </div>
     </div>
     <!-- /container -->
     <!-- JS -->
